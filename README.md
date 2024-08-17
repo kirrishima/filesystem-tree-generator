@@ -1,6 +1,4 @@
-### README.md
-
-**[🇬🇧 English Version](#filesystem-rree-generator) | [🇷🇺 Русская Версия](#генератор-дерева-файловой-системы)**
+**[🇬🇧 English Version](#filesystem-tree-generator) | [🇷🇺 Русская Версия](#генератор-дерева-файловой-системы)**
 
 # Filesystem Tree Generator
 
@@ -26,7 +24,16 @@ cd filesystem-tree-generator
 ```
 
 ## Usage
-Configure the script in the `config` dictionary to suit your needs. Then, run the script:
+Configure the script in the `config` dictionary to suit your needs. 
+
+### Configuration
+- `file_path`: The name of the file where the tree will be saved.
+- `skip_content_folders`: Folders whose contents will be skipped.
+- `ignore_patterns`: Folders and files that will be skipped (uses `fnmatch` patterns).
+- `hard_ignores`: Similar to `ignore_patterns`, but bypasses exceptions.
+- `exceptions`: Files or folders that will not be ignored despite matching ignore patterns.
+
+Then, run the script:
 
 ```bash
 python generate_tree.py
@@ -99,7 +106,16 @@ cd filesystem-tree-generator
 ```
 
 ## Использование
-Настройте скрипт в словаре `config` в соответствии с вашими потребностями. Затем запустите скрипт:
+Настройте скрипт в словаре `config` в соответствии с вашими потребностями. 
+
+### Конфигурация
+- `file_path`: Название файла, в который будет сохранено дерево.
+- `skip_content_folders`: Папки, содержимое которых будет пропущено.
+- `ignore_patterns`: Папки и файлы, которые будут пропущены (используются шаблоны `fnmatch`).
+- `hard_ignores`: Аналогично `ignore_patterns`, но игнорирует исключения.
+- `exceptions`: Файлы или папки, которые не будут проигнорированы, даже если совпадают с шаблонами игнорирования.
+
+Затем запустите скрипт:
 
 ```bash
 python generate_tree.py
