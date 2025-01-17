@@ -16,7 +16,7 @@ This Python script generates a visual representation of the filesystem tree in a
 ## Installation
 Clone the repository:
 ```bash
-git clone https://github.com/yourusername/filesystem-tree-generator.git
+git clone https://github.com/kirrishima/filesystem-tree-generator
 ```
 Navigate to the project directory:
 ```bash
@@ -98,7 +98,7 @@ The generated filesystem tree will be saved in the file specified in the `file_p
 ## Установка
 Клонируйте репозиторий:
 ```bash
-git clone https://github.com/yourusername/filesystem-tree-generator.git
+git clone https://github.com/kirrishima/filesystem-tree-generator
 ```
 Перейдите в каталог проекта:
 ```bash
